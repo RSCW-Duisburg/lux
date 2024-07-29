@@ -40,7 +40,7 @@ use TYPO3\CMS\Extbase\Persistence\Exception\UnknownObjectException;
 
 class FrontendController extends ActionController
 {
-    protected $eventDispatcher;
+    protected EventDispatcherInterface $eventDispatcher;
     protected LoggerInterface $logger;
 
     public function __construct(EventDispatcherInterface $eventDispatcher, LoggerInterface $logger)

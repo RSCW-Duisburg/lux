@@ -19,6 +19,8 @@ class AddRequireJsModuleViewHelper extends AbstractViewHelper
     {
         /** @var PageRenderer $pageRenderer */
         $pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
-        $pageRenderer->loadRequireJsModule($this->arguments['moduleName']);
+        $pageRenderer->loadJavaScriptModule(
+            $this->arguments['moduleName'],
+        );
     }
 }

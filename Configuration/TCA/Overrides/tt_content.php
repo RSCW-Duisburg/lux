@@ -23,3 +23,5 @@ ExtensionManagementUtility::addPiFlexFormValue(
     'lux_pi1',
     'FILE:EXT:lux/Configuration/FlexForms/FlexFormPi1.xml'
 );
+
+$GLOBALS['TCA']['tx_lux_domain_model_linklistener']['ctrl']['allowedOnPages'] = true;
